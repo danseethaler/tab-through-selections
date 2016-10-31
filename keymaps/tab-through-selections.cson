@@ -1,0 +1,5 @@
+'atom-text-editor:not([mini])':
+  'cmd-shift-u': 'tab-through-selections:start'
+  'tab': 'tab-through-selections:next'
+  'shift-tab': 'tab-through-selections:previous'
+  'escape': 'tab-through-selections:unsubscribe'

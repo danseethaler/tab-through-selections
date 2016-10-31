@@ -1,0 +1,16 @@
+{
+    "name": "tab-through-selections",
+    "main": "./lib/tab-through-selections",
+    "version": "0.0.0",
+    "description": "Quickly tab through your multiple selections for quick editing",
+    "keywords": [
+    ],
+    "activationCommands": {},
+    "repository": "https://github.com/danseethaler/tab-through-selections",
+    "license": "MIT",
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "dependencies": {
+    }
+}
