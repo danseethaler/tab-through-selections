@@ -19,7 +19,9 @@ describe('TabThroughSelections', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.tab-through-selections')).not.toExist();
+      expect(
+        workspaceElement.querySelector('.tab-through-selections')
+      ).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
@@ -30,14 +32,23 @@ describe('TabThroughSelections', () => {
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.tab-through-selections')).toExist();
+        expect(
+          workspaceElement.querySelector('.tab-through-selections')
+        ).toExist();
 
-        let tabThroughSelectionsElement = workspaceElement.querySelector('.tab-through-selections');
+        let tabThroughSelectionsElement = workspaceElement.querySelector(
+          '.tab-through-selections'
+        );
         expect(tabThroughSelectionsElement).toExist();
 
-        let tabThroughSelectionsPanel = atom.workspace.panelForItem(tabThroughSelectionsElement);
+        let tabThroughSelectionsPanel = atom.workspace.panelForItem(
+          tabThroughSelectionsElement
+        );
         expect(tabThroughSelectionsPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'tab-through-selections:toggle');
+        atom.commands.dispatch(
+          workspaceElement,
+          'tab-through-selections:toggle'
+        );
         expect(tabThroughSelectionsPanel.isVisible()).toBe(false);
       });
     });
@@ -51,7 +62,9 @@ describe('TabThroughSelections', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.tab-through-selections')).not.toExist();
+      expect(
+        workspaceElement.querySelector('.tab-through-selections')
+      ).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
@@ -63,9 +76,14 @@ describe('TabThroughSelections', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let tabThroughSelectionsElement = workspaceElement.querySelector('.tab-through-selections');
+        let tabThroughSelectionsElement = workspaceElement.querySelector(
+          '.tab-through-selections'
+        );
         expect(tabThroughSelectionsElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'tab-through-selections:toggle');
+        atom.commands.dispatch(
+          workspaceElement,
+          'tab-through-selections:toggle'
+        );
         expect(tabThroughSelectionsElement).not.toBeVisible();
       });
     });
