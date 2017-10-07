@@ -2,5 +2,5 @@
   "prettier.tabWidth": 2,
   "prettier.semi": true,
   "editor.formatOnSave": true,
-  "prettier.trailingComma": "all"
+  "prettier.trailingComma": "es5"
 }

@@ -6,7 +6,10 @@
     "Quickly tab through your multiple selections for quick editing",
   "keywords": [],
   "activationCommands": {
-    "atom-text-editor:not([mini])": "tab-through-selections:start"
+    "atom-text-editor:not([mini])": [
+      "tab-through-selections:start",
+      "tab-through-selections:select-final"
+    ]
   },
   "scripts": {
     "format":
