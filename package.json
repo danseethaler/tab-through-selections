@@ -1,9 +1,8 @@
 {
   "name": "tab-through-selections",
   "main": "./lib/tab-through-selections",
-  "version": "0.1.0",
-  "description":
-    "Quickly tab through your multiple selections for quick editing",
+  "version": "0.2.0",
+  "description": "Quickly tab through your multiple selections for quick editing",
   "keywords": [],
   "activationCommands": {
     "atom-text-editor:not([mini])": [
@@ -12,8 +11,7 @@
     ]
   },
   "scripts": {
-    "format":
-      "prettier --single-quote --trailing-comma es5 --write '{lib,styles,spec}/**/*.{js,less}'"
+    "format": "prettier --single-quote --trailing-comma es5 --write '{lib,styles,spec}/**/*.{js,less}'"
   },
   "repository": "https://github.com/danseethaler/tab-through-selections",
   "license": "MIT",
